@@ -1,0 +1,17 @@
+Lab 1 — Three observations from five tickets
+
+1. The tickets contain noisy and messy text, including spelling mistakes,
+   capital letters, forwarded email chains, signatures, phone numbers, and
+   historical quoted content. This makes extracting the relevant information
+   more difficult.
+
+2. Some tickets may contain multiple policy-number-shaped strings, including
+   numbers inside quoted replies. The system therefore needs to distinguish
+   the current/live message from historical quoted content.
+
+3. Category and urgency can be difficult to classify because similar-looking
+   tickets can have different labels. In particular, an angry claim is still
+   "claims" when the customer wants the claim processed, while "complaint"
+   applies when Aurora's conduct itself is the subject. Urgency depends on the
+   actual situation, escalation, and deadlines, not simply on how angry the
+   customer sounds.
