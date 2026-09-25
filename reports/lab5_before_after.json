@@ -1,0 +1,49 @@
+{
+  "fix": {
+    "parameter": "final_k",
+    "before": 5,
+    "after": 10,
+    "reason": "Mode 4 ranking failures: relevant documents were retrieved but were lost during final selection."
+  },
+  "before": {
+    "correctness": 0.778,
+    "faithfulness": 0.956,
+    "citation_validity": 1.0,
+    "refusal_recall": 1.0,
+    "refusal_precision": 0.833,
+    "p95_latency_ms": null,
+    "cost_usd": null
+  },
+  "after": {
+    "correctness": 0.787,
+    "faithfulness": 0.956,
+    "citation_validity": 1.0,
+    "refusal_recall": 1.0,
+    "refusal_precision": 0.833,
+    "p95_latency_ms": 4264,
+    "cost_usd": 0.5142
+  },
+  "observed_change": {
+    "correctness": 0.009,
+    "faithfulness": 0.0,
+    "citation_validity": 0.0,
+    "refusal_recall": 0.0,
+    "refusal_precision": 0.0
+  },
+  "by_kind_after": {
+    "aggregation": 0.75,
+    "multi_hop": 0.55,
+    "paraphrase": 1.0,
+    "single_hop": 0.861,
+    "trap_archived": 0.833
+  },
+  "diagnosis": {
+    "total_failures_before": 18,
+    "generation_before": 11,
+    "ranking_before": 7,
+    "total_failures_after": 16,
+    "generation_after": 11,
+    "ranking_after": 5
+  },
+  "note": "The final_k=10 change was the selected Lab 5 fix. A subsequent answer-prompt experiment increased correctness to 0.800 but reduced faithfulness to 0.911, so it is treated as a separate experiment rather than the selected fix."
+}

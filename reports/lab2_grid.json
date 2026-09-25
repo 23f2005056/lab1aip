@@ -1,0 +1,758 @@
+{
+  "zero_shot": {
+    "name": "zero_shot",
+    "started_at": "2026-09-09 17:09:03",
+    "n": 5,
+    "aggregate": {
+      "escalated": 0.0,
+      "field.category": 1.0,
+      "field.contains_pii": 0.8,
+      "field.escalate": 0.8,
+      "field.language": 1.0,
+      "field.policy_number": 1.0,
+      "field.product": 1.0,
+      "field.sentiment": 1.0,
+      "field.urgency": 0.4,
+      "field_accuracy": 0.875,
+      "record_accuracy": 0.4,
+      "schema_valid": 1.0,
+      "error_rate": 0.0
+    },
+    "budget": {
+      "label": "zero_shot",
+      "calls": 5,
+      "cached_calls": 0,
+      "prompt_tokens": 5540,
+      "completion_tokens": 307,
+      "cost_usd": 0.002429,
+      "unpriced_calls": 0,
+      "unpriced_models": [],
+      "latency_p50_ms": 985.7,
+      "latency_p95_ms": 1198.5
+    },
+    "results": [
+      {
+        "id": "T0054",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 0.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 0.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.75,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 5924.9,
+        "output": {
+          "evidence": "Your agent mis-sold me this policy.",
+          "category": "complaint",
+          "urgency": 3,
+          "sentiment": "angry",
+          "product": "unknown",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": false,
+          "escalate": false
+        }
+      },
+      {
+        "id": "T0238",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1202.4,
+        "output": {
+          "evidence": "I submitted a portability request 21 days ago and heard nothing.",
+          "category": "policy_change",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "bronze",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": true,
+          "escalate": false
+        }
+      },
+      {
+        "id": "T0183",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 0.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 0.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.75,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 906.0,
+        "output": {
+          "evidence": "Your service is a disgrace and I am filing a complaint with the ombudsman.",
+          "category": "complaint",
+          "urgency": 4,
+          "sentiment": "angry",
+          "product": "platinum",
+          "language": "en",
+          "policy_number": "AUR-9078501",
+          "contains_pii": true,
+          "escalate": true
+        }
+      },
+      {
+        "id": "T0095",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 0.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.875,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 988.9,
+        "output": {
+          "evidence": "How many wellness points do I currently have on AUR-9746149 and what discount does that give me?",
+          "category": "information",
+          "urgency": 1,
+          "sentiment": "neutral",
+          "product": "gold",
+          "language": "en",
+          "policy_number": "AUR-9746149",
+          "contains_pii": true,
+          "escalate": false
+        }
+      },
+      {
+        "id": "T0200",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 875.4,
+        "output": {
+          "evidence": "What is proportionate deduction and why does it apply to me?",
+          "category": "claims",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "unknown",
+          "language": "hi-en",
+          "policy_number": "AUR-9674338",
+          "contains_pii": true,
+          "escalate": false
+        }
+      }
+    ]
+  },
+  "few_shot": {
+    "name": "few_shot",
+    "started_at": "2026-09-09 17:09:58",
+    "n": 5,
+    "aggregate": {
+      "escalated": 0.0,
+      "field.category": 1.0,
+      "field.contains_pii": 0.8,
+      "field.escalate": 1.0,
+      "field.language": 1.0,
+      "field.policy_number": 1.0,
+      "field.product": 1.0,
+      "field.sentiment": 1.0,
+      "field.urgency": 0.8,
+      "field_accuracy": 0.95,
+      "record_accuracy": 0.6,
+      "schema_valid": 1.0,
+      "error_rate": 0.0
+    },
+    "budget": {
+      "label": "few_shot",
+      "calls": 5,
+      "cached_calls": 0,
+      "prompt_tokens": 11185,
+      "completion_tokens": 355,
+      "cost_usd": 0.004243,
+      "unpriced_calls": 0,
+      "unpriced_models": [],
+      "latency_p50_ms": 1189.0,
+      "latency_p95_ms": 1306.9
+    },
+    "results": [
+      {
+        "id": "T0054",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1176.3,
+        "output": {
+          "evidence": "Your agent mis-sold me this policy.",
+          "category": "complaint",
+          "urgency": 4,
+          "sentiment": "angry",
+          "product": "unknown",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": false,
+          "escalate": true
+        }
+      },
+      {
+        "id": "T0238",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1193.9,
+        "output": {
+          "evidence": "I submitted a portability request 21 days ago and heard nothing.",
+          "category": "policy_change",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "bronze",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": true,
+          "escalate": false
+        }
+      },
+      {
+        "id": "T0183",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 0.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.875,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1278.3,
+        "output": {
+          "evidence": "Your service is a disgrace and I am filing a complaint with the ombudsman.",
+          "category": "complaint",
+          "urgency": 5,
+          "sentiment": "angry",
+          "product": "platinum",
+          "language": "en",
+          "policy_number": "AUR-9078501",
+          "contains_pii": true,
+          "escalate": true
+        }
+      },
+      {
+        "id": "T0095",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 0.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.875,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1096.3,
+        "output": {
+          "evidence": "How many wellness points do I currently have on AUR-9746149 and what discount does that give me?",
+          "category": "information",
+          "urgency": 1,
+          "sentiment": "neutral",
+          "product": "gold",
+          "language": "en",
+          "policy_number": "AUR-9746149",
+          "contains_pii": true,
+          "escalate": false
+        }
+      },
+      {
+        "id": "T0200",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1310.7,
+        "output": {
+          "evidence": "My claim on AUR-9674338 was settled at Rs 41800 but the hospital bill was much higher.",
+          "category": "claims",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "unknown",
+          "language": "hi-en",
+          "policy_number": "AUR-9674338",
+          "contains_pii": true,
+          "escalate": false
+        }
+      }
+    ]
+  },
+  "few_shot_reasoned": {
+    "name": "few_shot_reasoned",
+    "started_at": "2026-09-09 17:10:55",
+    "n": 5,
+    "aggregate": {
+      "escalated": 0.0,
+      "field.category": 1.0,
+      "field.contains_pii": 0.8,
+      "field.escalate": 1.0,
+      "field.language": 1.0,
+      "field.policy_number": 1.0,
+      "field.product": 1.0,
+      "field.sentiment": 1.0,
+      "field.urgency": 0.8,
+      "field_accuracy": 0.95,
+      "record_accuracy": 0.6,
+      "schema_valid": 1.0,
+      "error_rate": 0.0
+    },
+    "budget": {
+      "label": "few_shot_reasoned",
+      "calls": 5,
+      "cached_calls": 0,
+      "prompt_tokens": 13165,
+      "completion_tokens": 1054,
+      "cost_usd": 0.006584,
+      "unpriced_calls": 0,
+      "unpriced_models": [],
+      "latency_p50_ms": 1498.3,
+      "latency_p95_ms": 1663.7
+    },
+    "results": [
+      {
+        "id": "T0054",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1375.2,
+        "output": {
+          "evidence": "Your agent mis-sold me this policy.",
+          "category": "complaint",
+          "urgency": 4,
+          "sentiment": "angry",
+          "product": "unknown",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": false,
+          "needs_human_review": false,
+          "review_reason": "",
+          "reasoning": "The customer is accusing an agent of mis-selling the policy and demands a full refund due to unexpected maternity waiting periods, which constitutes a complaint. The sentiment is angry due to the mis-selling accusation and demand for a refund. No policy number or product is mentioned. The urgency is 4 because it involves a formal complaint of mis-selling demanding a full refund. Contains PII is false as there is only a name. Language is English.",
+          "escalate": true
+        }
+      },
+      {
+        "id": "T0238",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1460.7,
+        "output": {
+          "evidence": "I submitted a portability request 21 days ago and heard nothing.",
+          "category": "policy_change",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "bronze",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": true,
+          "needs_human_review": false,
+          "review_reason": "",
+          "reasoning": "The customer is inquiring about a delayed portability request, which falls under policy_change. It is urgent (3) because it has been stuck for 21 days with no response, creating frustration as the renewal is approaching. The sentiment is frustrated due to the delay and lack of response. The product is explicitly mentioned as 'Bronze'. The language is English. No policy number is provided in the live message. PII is present via the phone number.",
+          "escalate": false
+        }
+      },
+      {
+        "id": "T0183",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 0.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.875,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1503.3,
+        "output": {
+          "evidence": "Your service is a disgrace and I am filing a complaint with the ombudsman.",
+          "category": "complaint",
+          "urgency": 5,
+          "sentiment": "angry",
+          "product": "platinum",
+          "language": "en",
+          "policy_number": "AUR-9078501",
+          "contains_pii": true,
+          "needs_human_review": false,
+          "review_reason": "",
+          "reasoning": "The customer is extremely angry about being on hold for over an hour and explicitly threatens to file a complaint with the ombudsman regarding Aurora's conduct (service is a disgrace). This is classified as a complaint, urgency 5 due to the ombudsman threat and angry sentiment. Policy number AUR-9078501 is explicitly stated in the live message. Product is platinum. Language is English. No PII other than the name is present (no phone or external email).",
+          "escalate": true
+        }
+      },
+      {
+        "id": "T0095",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 0.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.875,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1554.2,
+        "output": {
+          "evidence": "How many wellness points do I currently have on AUR-9746149 and what discount does that give me?",
+          "category": "information",
+          "urgency": 1,
+          "sentiment": "neutral",
+          "product": "gold",
+          "language": "en",
+          "policy_number": "AUR-9746149",
+          "contains_pii": true,
+          "needs_human_review": false,
+          "review_reason": "",
+          "reasoning": "The customer is asking a general information question about their wellness points and discount without any pending transaction, error, or delay. Category is information. Urgency is 1 as it can be answered by looking up the account. Sentiment is neutral. Product is gold. Language is en. Policy number AUR-9746149 is present in the live text. Contains PII is true because a phone number and an external email are present.",
+          "escalate": false
+        }
+      },
+      {
+        "id": "T0200",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1669.4,
+        "output": {
+          "evidence": "My claim on AUR-9674338 was settled at Rs 41800 but the hospital bill was much higher.",
+          "category": "claims",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "unknown",
+          "language": "hi-en",
+          "policy_number": "AUR-9674338",
+          "contains_pii": true,
+          "needs_human_review": false,
+          "review_reason": "",
+          "reasoning": "The customer is asking about a claim settlement deduction and seeking an explanation of proportionate deduction, falling under claims. The sentiment is frustrated due to unexplained deductions, urgency is 3 since something is stuck/unexplained, policy number AUR-9674338 is present, product is unknown, contains PII due to phone number, and language is hi-en.",
+          "escalate": false
+        }
+      }
+    ]
+  },
+  "cascade": {
+    "name": "cascade",
+    "started_at": "2026-09-09 17:11:48",
+    "n": 5,
+    "aggregate": {
+      "escalated": 0.0,
+      "field.category": 1.0,
+      "field.contains_pii": 0.8,
+      "field.escalate": 1.0,
+      "field.language": 1.0,
+      "field.policy_number": 1.0,
+      "field.product": 1.0,
+      "field.sentiment": 1.0,
+      "field.urgency": 0.8,
+      "field_accuracy": 0.95,
+      "record_accuracy": 0.6,
+      "schema_valid": 1.0,
+      "error_rate": 0.0
+    },
+    "budget": {
+      "label": "cascade",
+      "calls": 5,
+      "cached_calls": 0,
+      "prompt_tokens": 11185,
+      "completion_tokens": 355,
+      "cost_usd": 0.004243,
+      "unpriced_calls": 0,
+      "unpriced_models": [],
+      "latency_p50_ms": 1119.4,
+      "latency_p95_ms": 1454.8
+    },
+    "results": [
+      {
+        "id": "T0054",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1283.1,
+        "output": {
+          "evidence": "Your agent mis-sold me this policy.",
+          "category": "complaint",
+          "urgency": 4,
+          "sentiment": "angry",
+          "product": "unknown",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": false,
+          "escalate": true,
+          "_path": "small"
+        }
+      },
+      {
+        "id": "T0238",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1122.9,
+        "output": {
+          "evidence": "I submitted a portability request 21 days ago and heard nothing.",
+          "category": "policy_change",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "bronze",
+          "language": "en",
+          "policy_number": null,
+          "contains_pii": true,
+          "escalate": false,
+          "_path": "small"
+        }
+      },
+      {
+        "id": "T0183",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 0.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.875,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1089.2,
+        "output": {
+          "evidence": "Your service is a disgrace and I am filing a complaint with the ombudsman.",
+          "category": "complaint",
+          "urgency": 5,
+          "sentiment": "angry",
+          "product": "platinum",
+          "language": "en",
+          "policy_number": "AUR-9078501",
+          "contains_pii": true,
+          "escalate": true,
+          "_path": "small"
+        }
+      },
+      {
+        "id": "T0095",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 0.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 0.875,
+          "record_accuracy": 0.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1075.5,
+        "output": {
+          "evidence": "How many wellness points do I currently have on AUR-9746149 and what discount does that give me?",
+          "category": "information",
+          "urgency": 1,
+          "sentiment": "neutral",
+          "product": "gold",
+          "language": "en",
+          "policy_number": "AUR-9746149",
+          "contains_pii": true,
+          "escalate": false,
+          "_path": "small"
+        }
+      },
+      {
+        "id": "T0200",
+        "metrics": {
+          "field.category": 1.0,
+          "field.urgency": 1.0,
+          "field.sentiment": 1.0,
+          "field.policy_number": 1.0,
+          "field.product": 1.0,
+          "field.escalate": 1.0,
+          "field.contains_pii": 1.0,
+          "field.language": 1.0,
+          "field_accuracy": 1.0,
+          "record_accuracy": 1.0,
+          "schema_valid": 1.0,
+          "escalated": 0.0
+        },
+        "error": null,
+        "latency_ms": 1458.5,
+        "output": {
+          "evidence": "My claim on AUR-9674338 was settled at Rs 41800 but the hospital bill was much higher.",
+          "category": "claims",
+          "urgency": 3,
+          "sentiment": "frustrated",
+          "product": "unknown",
+          "language": "hi-en",
+          "policy_number": "AUR-9674338",
+          "contains_pii": true,
+          "escalate": false,
+          "_path": "small"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{"run_id": "20260923-112233", "span_id": "0188869ca586", "parent_id": null, "name": "embed.batch", "ts": 1790142753.8710554, "model": "gemini/gemini-embedding-001", "n": 235, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}
+{"run_id": "20260923-112233", "span_id": "3182e92b647d", "parent_id": "bb934e92b534", "name": "embed.batch", "ts": 1790142753.9215214, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 1, "status": "ok", "duration_ms": 15482.93}
+{"run_id": "20260923-112233", "span_id": "bb934e92b534", "parent_id": null, "name": "retrieve.dense", "ts": 1790142753.9202373, "k": 12, "status": "ok", "duration_ms": 15485.66}
+{"run_id": "20260923-112233", "span_id": "1a2ba7663bce", "parent_id": null, "name": "llm.call", "ts": 1790142769.407552, "model": "gemini/gemini-3.7-flash", "cached": false, "prompt_tokens": 502, "completion_tokens": 365, "cost_usd": 0.001745, "latency_ms": 3149.2, "finish_reason": "stop", "status": "ok", "duration_ms": 3149.27}

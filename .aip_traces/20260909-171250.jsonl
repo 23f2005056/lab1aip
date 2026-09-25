@@ -1,0 +1,4 @@
+{"run_id": "20260909-171250", "span_id": "ed4156939eda", "parent_id": "36ef4ce10198", "name": "llm.call", "ts": 1788954175.5832784, "model": "gemini/gemini-3.5-flash-lite", "cached": false, "prompt_tokens": 1049, "completion_tokens": 61, "cost_usd": 0.000467, "latency_ms": 1433.5, "finish_reason": "stop", "status": "ok", "duration_ms": 1433.5}
+{"run_id": "20260909-171250", "span_id": "36ef4ce10198", "parent_id": null, "name": "eval.case", "ts": 1788954170.7921612, "case_id": "T0054", "eval": "zero_shot", "status": "ok", "duration_ms": 6225.62}
+{"run_id": "20260909-171250", "span_id": "712cbe70cc5f", "parent_id": "6316b55d5805", "name": "llm.call", "ts": 1788954177.0194836, "model": "gemini/gemini-3.5-flash-lite", "cached": false, "duration_ms": 1171.18}
+{"run_id": "20260909-171250", "span_id": "6316b55d5805", "parent_id": null, "name": "eval.case", "ts": 1788954177.0183756, "case_id": "T0238", "eval": "zero_shot", "duration_ms": 1183.09}

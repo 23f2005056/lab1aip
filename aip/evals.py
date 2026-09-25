@@ -30,10 +30,11 @@ from __future__ import annotations
 import json
 import statistics
 import time
+from collections.abc import Callable, Sequence
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Sequence
+from typing import Any
 
 from aip import cost, tracing
 
@@ -150,19 +151,36 @@ ANSWER:
 Reply as JSON: {{"score": 0 or 1, "unsupported_claims": [..], "reason": "one sentence"}}
 """
 
-JUDGE_RUBRIC_CORRECTNESS = """\
+JUDGE_RUBRIC_CORRECTNESS = """
 Compare a CANDIDATE answer to a REFERENCE answer for the same question.
 
-Score 2 = same substantive content as the reference (wording may differ).
-Score 1 = partially correct: some correct content, but omits something the
-          reference states, or adds something the reference contradicts.
-Score 0 = wrong, or refuses when the reference answers.
+Score 2 = the candidate preserves all material facts, conditions,
+qualifications, numbers, exceptions, and conclusions in the reference.
+Minor wording differences or harmless rephrasing are allowed.
+
+Score 1 = the candidate is partially correct but:
+- omits a material fact, condition, qualification, exception, or number
+  stated in the reference; OR
+- gives only part of a multi-part answer; OR
+- adds a claim that conflicts with the reference.
+
+Score 0 = the answer is substantively wrong, or refuses when the
+reference provides an answer.
+
+For an unanswerable question, an exact refusal is correct and should
+receive score 2.
+
+Do not require identical wording.
+Do not penalize harmless rephrasing.
+Do not give score 2 merely because the main conclusion is correct if
+an important qualification or part of the reference is missing.
 
 QUESTION: {question}
 REFERENCE: {reference}
 CANDIDATE: {candidate}
 
-Reply as JSON: {{"score": 0|1|2, "reason": "one sentence"}}
+Reply as JSON:
+{{"score": 0|1|2, "reason": "one sentence"}}
 """
 
 

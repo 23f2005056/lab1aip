@@ -1,0 +1,1 @@
+{"run_id": "20260909-155105", "span_id": "1da222dd272b", "parent_id": null, "name": "llm.call", "ts": 1788949270.7321172, "model": "gemini/gemini-3.5-flash-lite", "cached": false, "prompt_tokens": 2149, "completion_tokens": 66, "cost_usd": 0.00081, "latency_ms": 1205.3, "finish_reason": "stop", "status": "ok", "duration_ms": 1205.3}

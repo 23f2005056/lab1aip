@@ -1,0 +1,128 @@
+{"run_id": "20260916-184705", "span_id": "a97e29307682", "parent_id": null, "name": "embed.batch", "ts": 1789564625.289168, "model": "gemini/gemini-embedding-001", "n": 235, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}
+{"run_id": "20260916-184705", "span_id": "3e977b4ba580", "parent_id": "43814641cbfe", "name": "embed.batch", "ts": 1789564625.3334885, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}
+{"run_id": "20260916-184705", "span_id": "43814641cbfe", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.332385, "k": 10, "status": "ok", "duration_ms": 2.26}
+{"run_id": "20260916-184705", "span_id": "b8678e9b8cea", "parent_id": "75c3d55ecdab", "name": "embed.batch", "ts": 1789564625.3368385, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "75c3d55ecdab", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.335644, "k": 10, "status": "ok", "duration_ms": 12.04}
+{"run_id": "20260916-184705", "span_id": "e43966d3ff2d", "parent_id": "2cbe35c2aad4", "name": "embed.batch", "ts": 1789564625.3492393, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "2cbe35c2aad4", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3482864, "k": 10, "status": "ok", "duration_ms": 1.93}
+{"run_id": "20260916-184705", "span_id": "4b4384277777", "parent_id": "d3e87e73bfb9", "name": "embed.batch", "ts": 1789564625.3516386, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "d3e87e73bfb9", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3507159, "k": 10, "status": "ok", "duration_ms": 2.2}
+{"run_id": "20260916-184705", "span_id": "7062213859da", "parent_id": "fd4ea66edbc6", "name": "embed.batch", "ts": 1789564625.3546295, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "fd4ea66edbc6", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3536417, "k": 10, "status": "ok", "duration_ms": 2.06}
+{"run_id": "20260916-184705", "span_id": "1086f365983d", "parent_id": "f344b2e20d8e", "name": "embed.batch", "ts": 1789564625.357034, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "f344b2e20d8e", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3562398, "k": 10, "status": "ok", "duration_ms": 1.64}
+{"run_id": "20260916-184705", "span_id": "2d802316eb34", "parent_id": "b427ec8a6572", "name": "embed.batch", "ts": 1789564625.3591342, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "b427ec8a6572", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.358348, "k": 10, "status": "ok", "duration_ms": 1.82}
+{"run_id": "20260916-184705", "span_id": "9ff500b60114", "parent_id": "60367dcd4a58", "name": "embed.batch", "ts": 1789564625.361587, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "60367dcd4a58", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3607218, "k": 10, "status": "ok", "duration_ms": 1.93}
+{"run_id": "20260916-184705", "span_id": "296ebf070278", "parent_id": "9e0924d6a99e", "name": "embed.batch", "ts": 1789564625.3644288, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "9e0924d6a99e", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.36332, "k": 10, "status": "ok", "duration_ms": 2.26}
+{"run_id": "20260916-184705", "span_id": "7cf02d87f217", "parent_id": "c5b990cd69a3", "name": "embed.batch", "ts": 1789564625.3668768, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "c5b990cd69a3", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.366089, "k": 10, "status": "ok", "duration_ms": 1.88}
+{"run_id": "20260916-184705", "span_id": "4d3c5c07eae4", "parent_id": "14cb43246ab7", "name": "embed.batch", "ts": 1789564625.3699992, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}
+{"run_id": "20260916-184705", "span_id": "14cb43246ab7", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3687098, "k": 10, "status": "ok", "duration_ms": 2.57}
+{"run_id": "20260916-184705", "span_id": "616f86e0b501", "parent_id": "14e9987e4f0c", "name": "embed.batch", "ts": 1789564625.3730266, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "14e9987e4f0c", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3719661, "k": 10, "status": "ok", "duration_ms": 2.3}
+{"run_id": "20260916-184705", "span_id": "b04a4f4b2dcc", "parent_id": "a42be756bdb2", "name": "embed.batch", "ts": 1789564625.3760102, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}
+{"run_id": "20260916-184705", "span_id": "a42be756bdb2", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.374983, "k": 10, "status": "ok", "duration_ms": 2.44}
+{"run_id": "20260916-184705", "span_id": "42f40d02441c", "parent_id": "e89aed023bc3", "name": "embed.batch", "ts": 1789564625.3789718, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "e89aed023bc3", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3780863, "k": 10, "status": "ok", "duration_ms": 1.82}
+{"run_id": "20260916-184705", "span_id": "4c65442640c1", "parent_id": "14677b10b97b", "name": "embed.batch", "ts": 1789564625.3811224, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "14677b10b97b", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3803813, "k": 10, "status": "ok", "duration_ms": 1.62}
+{"run_id": "20260916-184705", "span_id": "b1cde2e41e57", "parent_id": "b51080418753", "name": "embed.batch", "ts": 1789564625.3836784, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "b51080418753", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3826268, "k": 10, "status": "ok", "duration_ms": 2.1}
+{"run_id": "20260916-184705", "span_id": "bef5da68f000", "parent_id": "1b932ff59103", "name": "embed.batch", "ts": 1789564625.3862405, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "1b932ff59103", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3853006, "k": 10, "status": "ok", "duration_ms": 2.32}
+{"run_id": "20260916-184705", "span_id": "475f80fcc6fe", "parent_id": "05f6d272433e", "name": "embed.batch", "ts": 1789564625.389042, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "05f6d272433e", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.388196, "k": 10, "status": "ok", "duration_ms": 1.79}
+{"run_id": "20260916-184705", "span_id": "7aaa1d906b25", "parent_id": "2f8a24bd30d3", "name": "embed.batch", "ts": 1789564625.3913639, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "2f8a24bd30d3", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3905191, "k": 10, "status": "ok", "duration_ms": 1.82}
+{"run_id": "20260916-184705", "span_id": "bdafee1f2df9", "parent_id": "0a50903de0d7", "name": "embed.batch", "ts": 1789564625.3938382, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "0a50903de0d7", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3929386, "k": 10, "status": "ok", "duration_ms": 1.83}
+{"run_id": "20260916-184705", "span_id": "d61ac52aeaae", "parent_id": "3ed5c4f34b60", "name": "embed.batch", "ts": 1789564625.3960927, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "3ed5c4f34b60", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.3952737, "k": 10, "status": "ok", "duration_ms": 1.72}
+{"run_id": "20260916-184705", "span_id": "3dd4460333a8", "parent_id": "0a60ea812c94", "name": "embed.batch", "ts": 1789564625.3981948, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "0a60ea812c94", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.397437, "k": 10, "status": "ok", "duration_ms": 1.59}
+{"run_id": "20260916-184705", "span_id": "ae161ddfbe51", "parent_id": "7a61ba7c763a", "name": "embed.batch", "ts": 1789564625.4003317, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "7a61ba7c763a", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.39955, "k": 10, "status": "ok", "duration_ms": 1.84}
+{"run_id": "20260916-184705", "span_id": "4f934b58b172", "parent_id": "4bf81c2563a1", "name": "embed.batch", "ts": 1789564625.4029844, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}
+{"run_id": "20260916-184705", "span_id": "4bf81c2563a1", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4019876, "k": 10, "status": "ok", "duration_ms": 2.29}
+{"run_id": "20260916-184705", "span_id": "e46f19293068", "parent_id": "30a5248dcabb", "name": "embed.batch", "ts": 1789564625.405921, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "30a5248dcabb", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4048994, "k": 10, "status": "ok", "duration_ms": 2.26}
+{"run_id": "20260916-184705", "span_id": "691680489371", "parent_id": "5e5b727585ca", "name": "embed.batch", "ts": 1789564625.4085076, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "5e5b727585ca", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4077055, "k": 10, "status": "ok", "duration_ms": 1.68}
+{"run_id": "20260916-184705", "span_id": "1257a02395d9", "parent_id": "63e7f8ebc019", "name": "embed.batch", "ts": 1789564625.4106934, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "63e7f8ebc019", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.409873, "k": 10, "status": "ok", "duration_ms": 1.69}
+{"run_id": "20260916-184705", "span_id": "19e3a6f05e4b", "parent_id": "6bb3c4e17c6d", "name": "embed.batch", "ts": 1789564625.4127755, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "6bb3c4e17c6d", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4120362, "k": 10, "status": "ok", "duration_ms": 1.55}
+{"run_id": "20260916-184705", "span_id": "94282726529f", "parent_id": "c683445125f5", "name": "embed.batch", "ts": 1789564625.4150012, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "c683445125f5", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4141176, "k": 10, "status": "ok", "duration_ms": 1.86}
+{"run_id": "20260916-184705", "span_id": "0264d0936b5c", "parent_id": "68ab84dfcd1f", "name": "embed.batch", "ts": 1789564625.4172556, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "68ab84dfcd1f", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.416471, "k": 10, "status": "ok", "duration_ms": 1.91}
+{"run_id": "20260916-184705", "span_id": "1968cf2028ce", "parent_id": "5fb1c2da3bf3", "name": "embed.batch", "ts": 1789564625.419938, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "5fb1c2da3bf3", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4190133, "k": 10, "status": "ok", "duration_ms": 1.93}
+{"run_id": "20260916-184705", "span_id": "8b2b504ab5b1", "parent_id": "4bbedef467a6", "name": "embed.batch", "ts": 1789564625.422194, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "4bbedef467a6", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4214346, "k": 10, "status": "ok", "duration_ms": 1.61}
+{"run_id": "20260916-184705", "span_id": "d4f3fd10c47a", "parent_id": "34085ffa6582", "name": "embed.batch", "ts": 1789564625.424178, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "34085ffa6582", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.423497, "k": 10, "status": "ok", "duration_ms": 1.45}
+{"run_id": "20260916-184705", "span_id": "637f09769152", "parent_id": "6d0a80080130", "name": "embed.batch", "ts": 1789564625.4260564, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "6d0a80080130", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4253817, "k": 10, "status": "ok", "duration_ms": 1.46}
+{"run_id": "20260916-184705", "span_id": "a5865d9a733d", "parent_id": "4dab88fa4138", "name": "embed.batch", "ts": 1789564625.4281359, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "4dab88fa4138", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4273329, "k": 10, "status": "ok", "duration_ms": 1.75}
+{"run_id": "20260916-184705", "span_id": "3ad6dd77af30", "parent_id": "8ab2a3dacfcb", "name": "embed.batch", "ts": 1789564625.4307547, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "8ab2a3dacfcb", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4296787, "k": 10, "status": "ok", "duration_ms": 2.12}
+{"run_id": "20260916-184705", "span_id": "d39942254635", "parent_id": "878c1c877d6d", "name": "embed.batch", "ts": 1789564625.4332333, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "878c1c877d6d", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4323347, "k": 10, "status": "ok", "duration_ms": 1.86}
+{"run_id": "20260916-184705", "span_id": "0b4c7a0b04e0", "parent_id": "42949b47f471", "name": "embed.batch", "ts": 1789564625.435659, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}
+{"run_id": "20260916-184705", "span_id": "42949b47f471", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4347618, "k": 10, "status": "ok", "duration_ms": 2.09}
+{"run_id": "20260916-184705", "span_id": "d1a3d63d6397", "parent_id": "c1cd911f6ad4", "name": "embed.batch", "ts": 1789564625.4383414, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "c1cd911f6ad4", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.4374273, "k": 10, "status": "ok", "duration_ms": 1.92}
+{"run_id": "20260916-184705", "span_id": "b71d99b2d407", "parent_id": "036f49b4780b", "name": "embed.batch", "ts": 1789564625.4407673, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "036f49b4780b", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.439891, "k": 10, "status": "ok", "duration_ms": 1.87}
+{"run_id": "20260916-184705", "span_id": "867af593f911", "parent_id": "ef65a29c77ba", "name": "embed.batch", "ts": 1789564625.4431725, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "ef65a29c77ba", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.442292, "k": 10, "status": "ok", "duration_ms": 1.83}
+{"run_id": "20260916-184705", "span_id": "70ab4c12e8a4", "parent_id": "634298e4370d", "name": "embed.batch", "ts": 1789564625.445304, "model": "gemini/gemini-embedding-001", "n": 1, "n_uncached": 0, "status": "ok", "duration_ms": 0.0}
+{"run_id": "20260916-184705", "span_id": "634298e4370d", "parent_id": null, "name": "retrieve.dense", "ts": 1789564625.444581, "k": 10, "status": "ok", "duration_ms": 1.56}
+{"run_id": "20260916-184705", "span_id": "b16f586a7675", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4706435, "k": 10, "status": "ok", "duration_ms": 0.97}
+{"run_id": "20260916-184705", "span_id": "40caf512c153", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4721506, "k": 10, "status": "ok", "duration_ms": 0.79}
+{"run_id": "20260916-184705", "span_id": "abe0026a049c", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4733064, "k": 10, "status": "ok", "duration_ms": 0.52}
+{"run_id": "20260916-184705", "span_id": "3bffbbb64692", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4741273, "k": 10, "status": "ok", "duration_ms": 0.64}
+{"run_id": "20260916-184705", "span_id": "b1bea19d7948", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4750533, "k": 10, "status": "ok", "duration_ms": 0.69}
+{"run_id": "20260916-184705", "span_id": "cca22f43b58f", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4760218, "k": 10, "status": "ok", "duration_ms": 0.57}
+{"run_id": "20260916-184705", "span_id": "0bf313185182", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4768643, "k": 10, "status": "ok", "duration_ms": 0.58}
+{"run_id": "20260916-184705", "span_id": "8559a6f3d19b", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4777217, "k": 10, "status": "ok", "duration_ms": 0.43}
+{"run_id": "20260916-184705", "span_id": "b1faf406cf82", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4784198, "k": 10, "status": "ok", "duration_ms": 0.57}
+{"run_id": "20260916-184705", "span_id": "5ef0601adeab", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.47927, "k": 10, "status": "ok", "duration_ms": 1.01}
+{"run_id": "20260916-184705", "span_id": "4c6f843d8790", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4805622, "k": 10, "status": "ok", "duration_ms": 0.44}
+{"run_id": "20260916-184705", "span_id": "a639fb2fb473", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4812775, "k": 10, "status": "ok", "duration_ms": 0.33}
+{"run_id": "20260916-184705", "span_id": "259eeeb49c32", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4818692, "k": 10, "status": "ok", "duration_ms": 0.45}
+{"run_id": "20260916-184705", "span_id": "b0139beb6c68", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.482596, "k": 10, "status": "ok", "duration_ms": 0.9}
+{"run_id": "20260916-184705", "span_id": "30c2b9830e01", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4837916, "k": 10, "status": "ok", "duration_ms": 0.49}
+{"run_id": "20260916-184705", "span_id": "17e0e140e04f", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4847198, "k": 10, "status": "ok", "duration_ms": 1.22}
+{"run_id": "20260916-184705", "span_id": "b3e851aab10c", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.486545, "k": 10, "status": "ok", "duration_ms": 0.51}
+{"run_id": "20260916-184705", "span_id": "b4fa98bda21f", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4874778, "k": 10, "status": "ok", "duration_ms": 1.12}
+{"run_id": "20260916-184705", "span_id": "bf08f43a4acf", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.488996, "k": 10, "status": "ok", "duration_ms": 1.51}
+{"run_id": "20260916-184705", "span_id": "64ac69138374", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4908426, "k": 10, "status": "ok", "duration_ms": 1.27}
+{"run_id": "20260916-184705", "span_id": "99129d079b50", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4924283, "k": 10, "status": "ok", "duration_ms": 1.27}
+{"run_id": "20260916-184705", "span_id": "8c2942c98593", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4940054, "k": 10, "status": "ok", "duration_ms": 0.95}
+{"run_id": "20260916-184705", "span_id": "efc969dc6bf4", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4952452, "k": 10, "status": "ok", "duration_ms": 0.74}
+{"run_id": "20260916-184705", "span_id": "b1624479f7ac", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4962778, "k": 10, "status": "ok", "duration_ms": 1.03}
+{"run_id": "20260916-184705", "span_id": "f11a40ef975e", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4975982, "k": 10, "status": "ok", "duration_ms": 1.25}
+{"run_id": "20260916-184705", "span_id": "1a2f93bac420", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.4993432, "k": 10, "status": "ok", "duration_ms": 0.77}
+{"run_id": "20260916-184705", "span_id": "892c2d4c0145", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5004807, "k": 10, "status": "ok", "duration_ms": 0.85}
+{"run_id": "20260916-184705", "span_id": "9b91762c7e59", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5019047, "k": 10, "status": "ok", "duration_ms": 1.44}
+{"run_id": "20260916-184705", "span_id": "029636257b40", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5038993, "k": 10, "status": "ok", "duration_ms": 1.15}
+{"run_id": "20260916-184705", "span_id": "ca9c2c078e0a", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5054262, "k": 10, "status": "ok", "duration_ms": 0.76}
+{"run_id": "20260916-184705", "span_id": "b35004804d94", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.506491, "k": 10, "status": "ok", "duration_ms": 0.7}
+{"run_id": "20260916-184705", "span_id": "02497e9249c0", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5074792, "k": 10, "status": "ok", "duration_ms": 0.46}
+{"run_id": "20260916-184705", "span_id": "12bdaad9dc62", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5082164, "k": 10, "status": "ok", "duration_ms": 0.74}
+{"run_id": "20260916-184705", "span_id": "3a3ff40cb263", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5092416, "k": 10, "status": "ok", "duration_ms": 1.23}
+{"run_id": "20260916-184705", "span_id": "f235f096a68c", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5107594, "k": 10, "status": "ok", "duration_ms": 0.63}
+{"run_id": "20260916-184705", "span_id": "0bfc839b9239", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5116723, "k": 10, "status": "ok", "duration_ms": 0.74}
+{"run_id": "20260916-184705", "span_id": "b003100c55a7", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.512705, "k": 10, "status": "ok", "duration_ms": 0.63}
+{"run_id": "20260916-184705", "span_id": "19a22c23ec46", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.513613, "k": 10, "status": "ok", "duration_ms": 1.0}
+{"run_id": "20260916-184705", "span_id": "31fbda597712", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5149257, "k": 10, "status": "ok", "duration_ms": 0.76}
+{"run_id": "20260916-184705", "span_id": "9f07bebefd42", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.515988, "k": 10, "status": "ok", "duration_ms": 0.98}
+{"run_id": "20260916-184705", "span_id": "19671ca527a1", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.5173063, "k": 10, "status": "ok", "duration_ms": 0.81}
+{"run_id": "20260916-184705", "span_id": "36ac31d278a0", "parent_id": null, "name": "retrieve.bm25", "ts": 1789564625.518819, "k": 10, "status": "ok", "duration_ms": 0.66}
+{"run_id": "20260916-184705", "span_id": "d1c97407ad4d", "parent_id": null, "name": "embed.batch", "ts": 1789564625.8601882, "model": "gemini/gemini-embedding-001", "n": 235, "n_uncached": 0, "status": "ok", "duration_ms": 0.01}

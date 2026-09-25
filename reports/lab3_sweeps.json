@@ -1,0 +1,317 @@
+{
+  "A1_chunking_strategy": [
+    {
+      "config": "fixed-800 dense",
+      "hit_rate@1": 0.7381,
+      "hit_rate@5": 0.9524,
+      "recall@5": 0.8373,
+      "mrr": 0.8387,
+      "ndcg@10": 0.7952,
+      "latency_p95_ms": 3.3417
+    },
+    {
+      "config": "sliding-800 dense",
+      "hit_rate@1": 0.7857,
+      "hit_rate@5": 0.9286,
+      "recall@5": 0.8452,
+      "mrr": 0.8451,
+      "ndcg@10": 0.8053,
+      "latency_p95_ms": 2.3582
+    },
+    {
+      "config": "recursive-800 dense",
+      "hit_rate@1": 0.7857,
+      "hit_rate@5": 0.9286,
+      "recall@5": 0.8393,
+      "mrr": 0.8552,
+      "ndcg@10": 0.8127,
+      "latency_p95_ms": 2.8625
+    },
+    {
+      "config": "markdown-800 dense",
+      "hit_rate@1": 0.7619,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.8988,
+      "mrr": 0.8720,
+      "ndcg@10": 0.8458,
+      "latency_p95_ms": 3.6633
+    }
+  ],
+
+  "A2_chunk_size": [
+    {
+      "config": "markdown-400 dense",
+      "hit_rate@1": 0.7857,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.9028,
+      "mrr": 0.8800,
+      "ndcg@10": 0.8527,
+      "latency_p95_ms": 3.0115
+    },
+    {
+      "config": "markdown-800 dense",
+      "hit_rate@1": 0.7619,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.8988,
+      "mrr": 0.8720,
+      "ndcg@10": 0.8458,
+      "latency_p95_ms": 3.4298
+    },
+    {
+      "config": "markdown-1600 dense",
+      "hit_rate@1": 0.7143,
+      "hit_rate@5": 0.9524,
+      "recall@5": 0.8750,
+      "mrr": 0.8262,
+      "ndcg@10": 0.8075,
+      "latency_p95_ms": 3.3871
+    }
+  ],
+
+  "A3_heading_path": [
+    {
+      "config": "markdown-400 without-heading-path",
+      "hit_rate@1": 0.7381,
+      "hit_rate@5": 1.0000,
+      "recall@5": 0.9226,
+      "mrr": 0.8480,
+      "ndcg@10": 0.8493,
+      "latency_p95_ms": 2.8506
+    },
+    {
+      "config": "markdown-400 with-heading-path",
+      "hit_rate@1": 0.7857,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.9028,
+      "mrr": 0.8800,
+      "ndcg@10": 0.8527,
+      "latency_p95_ms": 3.2114
+    }
+  ],
+
+  "B1_retrieval": [
+    {
+      "config": "markdown-400 dense",
+      "hit_rate@1": 0.7857,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.9028,
+      "mrr": 0.8800,
+      "ndcg@10": 0.8527,
+      "latency_p95_ms": 5.29,
+      "note": "latency value truncated at right edge of screenshot; last digits not visible"
+    },
+    {
+      "config": "markdown-400 bm25",
+      "hit_rate@1": 0.4762,
+      "hit_rate@5": 0.9286,
+      "recall@5": 0.7956,
+      "mrr": 0.6698,
+      "ndcg@10": 0.6978,
+      "latency_p95_ms": 5.12,
+      "note": "latency value truncated at right edge of screenshot; last digits not visible"
+    },
+    {
+      "config": "markdown-400 hybrid",
+      "hit_rate@1": 0.6667,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.8631,
+      "mrr": 0.7976,
+      "ndcg@10": 0.7949,
+      "latency_p95_ms": 6.20,
+      "note": "latency value truncated at right edge of screenshot; last digits not visible"
+    }
+  ],
+
+  "B2_question_kind": {
+    "dense": {
+      "by_kind": [
+        { "kind": "aggregation", "mrr": 0.8750, "n": 4 },
+        { "kind": "multi_hop", "mrr": 1.0000, "n": 10 },
+        { "kind": "paraphrase", "mrr": 0.8000, "n": 5 },
+        { "kind": "single_hop", "mrr": 0.9074, "n": 18 },
+        { "kind": "trap_archived", "mrr": 0.8333, "n": 3 },
+        { "kind": "unanswerable", "mrr": 0.3125, "n": 2 }
+      ],
+      "Q41_mrr": 1.0,
+      "Q44_mrr": 0.5
+    },
+    "bm25": {
+      "by_kind": [
+        { "kind": "aggregation", "mrr": 0.3750, "n": 4 },
+        { "kind": "multi_hop", "mrr": 0.6500, "n": 10 },
+        { "kind": "paraphrase", "mrr": 0.4867, "n": 5 },
+        { "kind": "single_hop", "mrr": 0.8519, "n": 18 },
+        { "kind": "trap_archived", "mrr": 0.5111, "n": 3 },
+        { "kind": "unanswerable", "mrr": 0.4167, "n": 2 }
+      ],
+      "Q41_mrr": 0.0,
+      "Q44_mrr": 1.0
+    },
+    "hybrid": {
+      "by_kind": [
+        { "kind": "aggregation", "mrr": 0.5833, "n": 4 },
+        { "kind": "multi_hop", "mrr": 0.8167, "n": 10 },
+        { "kind": "paraphrase", "mrr": 0.6500, "n": 5 },
+        { "kind": "single_hop", "mrr": 0.9444, "n": 18 },
+        { "kind": "trap_archived", "mrr": 0.6667, "n": 3 },
+        { "kind": "unanswerable", "mrr": 0.3750, "n": 2 }
+      ],
+      "Q41_mrr": 0.25,
+      "Q44_mrr": 1.0
+    }
+  },
+
+  "B3_rrf": [
+    {
+      "config": "hybrid-rrf-k10",
+      "hit_rate@1": 0.6667,
+      "hit_rate@5": 1.0000,
+      "recall@5": 0.8849,
+      "mrr": 0.8115,
+      "ndcg@10": 0.8156,
+      "latency_p95_ms": 5.1052
+    },
+    {
+      "config": "hybrid-rrf-k30",
+      "hit_rate@1": 0.6667,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.8631,
+      "mrr": 0.7976,
+      "ndcg@10": 0.7949,
+      "latency_p95_ms": 6.4935
+    },
+    {
+      "config": "hybrid-rrf-k60",
+      "hit_rate@1": 0.6667,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.8631,
+      "mrr": 0.7976,
+      "ndcg@10": 0.7949,
+      "latency_p95_ms": 6.1569
+    },
+    {
+      "config": "hybrid-rrf-k100",
+      "hit_rate@1": 0.6667,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.8631,
+      "mrr": 0.7976,
+      "ndcg@10": 0.7901,
+      "latency_p95_ms": 6.0037
+    }
+  ],
+
+  "B4_fusion_weights": [
+    {
+      "config": "weights-1.0-1.0",
+      "hit_rate@1": 0.6667,
+      "hit_rate@5": 1.0000,
+      "recall@5": 0.8849,
+      "mrr": 0.8115,
+      "ndcg@10": 0.8156,
+      "latency_p95_ms": 6.3854
+    },
+    {
+      "config": "weights-2.0-1.0",
+      "hit_rate@1": 0.7381,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.8929,
+      "mrr": 0.8566,
+      "ndcg@10": 0.8394,
+      "latency_p95_ms": 9.7280
+    }
+  ],
+
+  "C2_llm_rerank": [
+    {
+      "config": "dense-k30-llm-5",
+      "hit_rate@1": 0.8333,
+      "hit_rate@5": 0.9524,
+      "recall@5": 0.8810,
+      "mrr": 0.8929,
+      "ndcg@10": 0.8459,
+      "latency_p95_ms": 33054.3788,
+      "note": "section label was cut off in screenshot; inferred as C2 (LLM reranker sweep) based on config name and matching numbers in C3 'LLM reranker' row"
+    }
+  ],
+
+  "C3_deployment": {
+    "dense_baseline": {
+      "ndcg@10": 0.8685,
+      "hit_rate@1": 0.7857,
+      "latency_p95_ms": 2.77
+    },
+    "cross_encoder": {
+      "ndcg@10": 0.8174,
+      "hit_rate@1": 0.7619,
+      "latency_p95_ms": 1808.31
+    },
+    "llm_reranker": {
+      "ndcg@10": 0.8459,
+      "hit_rate@1": 0.8333,
+      "latency_p95_ms": 33054.38
+    }
+  },
+
+  "C4_cross_encoder_failures": [
+    { "question": "Q01", "before": 1.0000, "after": 0.5000, "delta": -0.5000 },
+    { "question": "Q02", "before": 0.5000, "after": 0.3333, "delta": -0.1667 },
+    { "question": "Q20", "before": 1.0000, "after": 0.5000, "delta": -0.5000 },
+    { "question": "Q26", "before": 1.0000, "after": 0.3333, "delta": -0.6667 },
+    { "question": "Q32", "before": 1.0000, "after": 0.2000, "delta": -0.8000 },
+    { "question": "Q41", "before": 1.0000, "after": 0.3333, "delta": -0.6667 },
+    { "question": "Q45", "before": 1.0000, "after": 0.5000, "delta": -0.5000 }
+  ],
+
+  "D1_exact_vs_hnsw": {
+    "exact_numpy": {
+      "config": "dense-exact",
+      "hit_rate@1": 0.7857,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.9028,
+      "mrr": 0.8800,
+      "ndcg@10": 0.8527,
+      "latency_p95_ms": 6.0515
+    },
+    "chroma_hnsw": {
+      "config": "chroma-hnsw",
+      "hit_rate@1": 0.7857,
+      "hit_rate@5": 0.9762,
+      "recall@5": 0.9028,
+      "mrr": 0.8800,
+      "ndcg@10": 0.8527,
+      "latency_p95_ms": 24.7388
+    },
+    "recall@5_gap": 0.0000,
+    "ndcg@10_gap": 0.0000
+  },
+
+  "D2_scaling": [
+    {
+      "scale_label": "~160 chunks",
+      "chunks": 235,
+      "exact_numpy_ms": 3.844,
+      "chroma_hnsw_ms": 5.834,
+      "hnsw_over_exact_ratio": 1.52
+    },
+    {
+      "scale_label": "~4k chunks",
+      "chunks": 3035,
+      "exact_numpy_ms": 6.191,
+      "chroma_hnsw_ms": 6.290,
+      "hnsw_over_exact_ratio": 1.02
+    },
+    {
+      "scale_label": "~40k chunks",
+      "chunks": 28235,
+      "exact_numpy_ms": 33.646,
+      "chroma_hnsw_ms": 7.807,
+      "hnsw_over_exact_ratio": 0.23
+    }
+  ],
+
+  "D3_metadata_filtering": [
+    { "question": "Q29", "hit@1_before": 1.0000, "hit@1_after": 1.0000, "delta": 0.0000 },
+    { "question": "Q30", "hit@1_before": 0.0000, "hit@1_after": 1.0000, "delta": 1.0000 },
+    { "question": "Q31", "hit@1_before": 1.0000, "hit@1_after": 1.0000, "delta": 0.0000 }
+  ]
+}

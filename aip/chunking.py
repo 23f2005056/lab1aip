@@ -100,7 +100,12 @@ def recursive_chunks(text: str, doc_id: str, size: int = 800, overlap: int = 100
 _HEADING = re.compile(r"^(#{1,6})\s+(.*)$", re.MULTILINE)
 
 
-def markdown_chunks(text: str, doc_id: str, size: int = 1200) -> list[Chunk]:
+def markdown_chunks(
+    text: str,
+    doc_id: str,
+    size: int = 1200,
+    include_heading_path: bool = True
+) -> list[Chunk]:
     """Split on headings; prepend the heading path to every chunk.
 
     The prepended path ("Claims > Reimbursement > Timelines") is a cheap and
@@ -124,7 +129,7 @@ def markdown_chunks(text: str, doc_id: str, size: int = 1200) -> list[Chunk]:
 
     chunks: list[Chunk] = []
     for heading_path, body in sections:
-        prefix = f"[{heading_path}]\n"
+        prefix = f"[{heading_path}]\n" if include_heading_path else ""  
         room = max(size - len(prefix), 200)
         for piece in _recursive_split(body, room, _SEPARATORS):
             chunks.append(
