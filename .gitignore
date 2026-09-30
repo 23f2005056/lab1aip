@@ -15,4 +15,7 @@ __pycache__/
 
 # OS files
 .DS_Store
-Thumbs.db
+Thumbs.db.aip_traces/
+.aip_cache/
+.aip_traces/
+.aip_cache/
