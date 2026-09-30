@@ -1,0 +1,32 @@
+name: Lab 7 Evaluation
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  regression-gate:
+    runs-on: ubuntu-latest
+
+    env:
+      AIP_OFFLINE: "1"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run regression gate
+        run: |
+          python labs/lab7/gate.py \
+            --config labs/lab7/thresholds.yml

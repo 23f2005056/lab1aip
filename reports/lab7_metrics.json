@@ -1,0 +1,41 @@
+{
+    "cost_today_usd":  0.0,
+    "cost_per_query_usd":  0.0,
+    "cache":  {
+                  "exact_hits":  3,
+                  "semantic_hits":  0,
+                  "misses":  0,
+                  "total_requests":  3,
+                  "hit_rate":  1.0,
+                  "semantic_threshold":  0.85,
+                  "semantic_entries":  0
+              },
+    "latency":  {
+                    "p50_ms":  1.425,
+                    "p95_ms":  1.602,
+                    "p99_ms":  1.617,
+                    "samples":  3
+                },
+    "latency_breakdown":  {
+                              "retrieval_ms":  null,
+                              "reranking_ms":  null,
+                              "generation_ms":  null,
+                              "validation_ms":  null,
+                              "repair_generation_ms":  null,
+                              "total_ms":  null,
+                              "samples":  0
+                          },
+    "streaming":  {
+                      "ttft_p50_ms":  null,
+                      "ttft_p95_ms":  null,
+                      "total_p50_ms":  null,
+                      "total_p95_ms":  null,
+                      "samples":  0
+                  },
+    "model_calls":  0,
+    "model_cached_calls":  0,
+    "unpriced_calls":  0,
+    "model_latency_p50_ms":  0.0,
+    "model_latency_p95_ms":  0.0,
+    "uptime_s":  102.9
+}
