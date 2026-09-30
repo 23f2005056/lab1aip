@@ -15,7 +15,9 @@ __pycache__/
 
 # OS files
 .DS_Store
-Thumbs.db.aip_traces/
-.aip_cache/
+Thumbs.db
+
+# Local traces
 .aip_traces/
-.aip_cache/
+# Local Chroma vector database
+.chroma_lab3/
