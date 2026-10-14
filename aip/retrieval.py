@@ -74,16 +74,32 @@ class DenseRetriever(Retriever):
             show_progress=show_progress, input_type="passage",
         )
 
-    def search(self, query: str, k: int = 8) -> list[Hit]:
+    def search(
+        self,
+        query: str,
+        k: int = 8,
+        query_embedding=None,
+    ) -> list[Hit]:
+        """
+        Search the dense index.
+
+        query_embedding is optional so existing Lab 3-5 code remains compatible.
+        If supplied, it is reused instead of embedding the query again.
+        """
         with tracing.trace("retrieve.dense", k=k):
-            q = embed(query, model=self.model, input_type="query")
+            q = (
+                query_embedding
+                if query_embedding is not None
+                else embed(query, model=self.model, input_type="query")
+            )
+
             scores = self.matrix @ q
             top = np.argsort(-scores)[:k]
+
             return [
                 Hit(self.chunks[i], float(scores[i]), "dense", rank)
                 for rank, i in enumerate(top)
             ]
-
 
 _TOKEN = re.compile(r"[a-z0-9]+")
 
@@ -109,7 +125,12 @@ class Bm25Retriever(Retriever):
         self.chunks = list(chunks)
         self.bm25 = BM25Okapi([tokenize(c.text) for c in self.chunks])
 
-    def search(self, query: str, k: int = 8) -> list[Hit]:
+    def search(
+            self,
+            query: str,
+            k: int = 8,
+            query_embedding=None,
+        ) -> list[Hit]:
         with tracing.trace("retrieve.bm25", k=k):
             scores = self.bm25.get_scores(tokenize(query))
             top = np.argsort(-scores)[:k]
@@ -268,7 +289,17 @@ class ChromaRetriever(Retriever):
 
     def search(self, query: str, k: int = 8, where: dict | None = None) -> list[Hit]:
         with tracing.trace("retrieve.chroma", k=k, filtered=bool(where)):
-            q = embed(query, model=self.model, input_type="query")
+            if query_embedding is None:
+                q = embed(
+                    query,
+                    model=self.model,
+                    input_type="query",
+                )
+            else:
+                q = np.asarray(
+                    query_embedding,
+                    dtype=np.float32,
+                )
             res = self.col.query(
                 query_embeddings=[q.tolist()], n_results=k, where=where,
                 include=["documents", "metadatas", "distances"],

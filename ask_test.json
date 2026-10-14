@@ -1,0 +1,5 @@
+﻿{
+  "question": "What is the deadline for submitting a reimbursement claim?",
+  "top_k": 5,
+  "mode": "rag"
+}

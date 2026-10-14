@@ -1,0 +1,8 @@
+INFO:     Started server process [17400]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[92m13:20:00 - LiteLLM:WARNING[0m: vertex_and_google_ai_studio_gemini.py:1083 - DeprecationWarning: `temperature`, `top_p`, and `top_k` continue to function for Gemini 3+ (gemini-3.7-flash) but are planned for removal in a future release. Move sampling guidance into the `system` instructions instead.
+[92m13:20:20 - LiteLLM:WARNING[0m: vertex_and_google_ai_studio_gemini.py:1083 - DeprecationWarning: `temperature`, `top_p`, and `top_k` continue to function for Gemini 3+ (gemini-3.7-flash) but are planned for removal in a future release. Move sampling guidance into the `system` instructions instead.
+[92m13:20:43 - LiteLLM:WARNING[0m: vertex_and_google_ai_studio_gemini.py:1083 - DeprecationWarning: `temperature`, `top_p`, and `top_k` continue to function for Gemini 3+ (gemini-3.7-flash) but are planned for removal in a future release. Move sampling guidance into the `system` instructions instead.
+[92m13:20:53 - LiteLLM:WARNING[0m: vertex_and_google_ai_studio_gemini.py:1083 - DeprecationWarning: `temperature`, `top_p`, and `top_k` continue to function for Gemini 3+ (gemini-3.7-flash) but are planned for removal in a future release. Move sampling guidance into the `system` instructions instead.

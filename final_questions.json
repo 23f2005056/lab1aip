@@ -1,0 +1,485 @@
+[
+  {
+    "id": "Q01",
+    "question": "What is the procedure for escalating a complaint when the first resolution does not solve the customer's issue?"
+  },
+  {
+    "id": "Q02",
+    "question": "How can a policyholder file a complaint with Aurora?"
+  },
+  {
+    "id": "Q03",
+    "question": "How long does Aurora have to resolve a customer grievance?"
+  },
+  {
+    "id": "Q04",
+    "question": "What happens if Aurora does not respond to a complaint within 30 days?"
+  },
+  {
+    "id": "Q05",
+    "question": "Who handles a complaint after the initial customer-service stage?"
+  },
+  {
+    "id": "Q06",
+    "question": "How quickly does the Grievance Redressal Officer respond?"
+  },
+  {
+    "id": "Q07",
+    "question": "Where can I find the contact details of Aurora's Grievance Redressal Officer?"
+  },
+  {
+    "id": "Q08",
+    "question": "When can a customer approach the Insurance Ombudsman?"
+  },
+  {
+    "id": "Q09",
+    "question": "What information should a customer provide when raising a complaint?"
+  },
+  {
+    "id": "Q10",
+    "question": "How does Aurora acknowledge a grievance after it is submitted?"
+  },
+  {
+    "id": "Q11",
+    "question": "What is the Stage 1 grievance process at Aurora?"
+  },
+  {
+    "id": "Q12",
+    "question": "What is the Stage 2 escalation process for an unresolved complaint?"
+  },
+  {
+    "id": "Q13",
+    "question": "What is the role of the Grievance Redressal Officer?"
+  },
+  {
+    "id": "Q14",
+    "question": "What happens when the final response from Aurora is unsatisfactory?"
+  },
+  {
+    "id": "Q15",
+    "question": "How long must a customer wait before approaching the Insurance Ombudsman?"
+  },
+  {
+    "id": "Q16",
+    "question": "What channels are available for submitting a grievance to Aurora?"
+  },
+  {
+    "id": "Q17",
+    "question": "What are the escalation stages for resolving an Aurora complaint?"
+  },
+  {
+    "id": "Q18",
+    "question": "Who publishes Aurora's complaint statistics?"
+  },
+  {
+    "id": "Q19",
+    "question": "Where are the jurisdictions of the Insurance Ombudsman offices listed?"
+  },
+  {
+    "id": "Q20",
+    "question": "Can a customer go directly to the Insurance Ombudsman without following Aurora's complaint process?"
+  },
+  {
+    "id": "Q21",
+    "question": "What should a customer do if the Stage 1 grievance is not resolved satisfactorily?"
+  },
+  {
+    "id": "Q22",
+    "question": "Within how many days should the Grievance Redressal Officer respond to an escalated complaint?"
+  },
+  {
+    "id": "Q23",
+    "question": "What are the available methods for raising a grievance with Aurora?"
+  },
+  {
+    "id": "Q24",
+    "question": "What details should be quoted when submitting a complaint about a claim dispute?"
+  },
+  {
+    "id": "Q25",
+    "question": "How many working days does Aurora have to acknowledge a newly submitted grievance?"
+  },
+  {
+    "id": "Q26",
+    "question": "What is the maximum period Aurora has to resolve a grievance after receiving it?"
+  },
+  {
+    "id": "Q27",
+    "question": "What is the next escalation option when Aurora's final complaint response remains unsatisfactory?"
+  },
+  {
+    "id": "Q28",
+    "question": "Under what circumstances can a policyholder approach the Insurance Ombudsman?"
+  },
+  {
+    "id": "Q29",
+    "question": "Where can customers find information about Aurora's grievance statistics?"
+  },
+  {
+    "id": "Q30",
+    "question": "How frequently are Aurora's complaint volumes and disposal rates published?"
+  },
+  {
+    "id": "Q31",
+    "question": "What information is published in the Ombudsman's annual report?"
+  },
+  {
+    "id": "Q32",
+    "question": "Which document contains the contact information for Aurora's Grievance Redressal Officer?"
+  },
+  {
+    "id": "Q33",
+    "question": "What happens if Aurora fails to respond to a complaint within the specified period?"
+  },
+  {
+    "id": "Q34",
+    "question": "What is the difference between the first grievance stage and the escalation to the GRO?"
+  },
+  {
+    "id": "Q35",
+    "question": "Who is responsible for handling an escalated Aurora grievance after the initial customer-service stage?"
+  },
+  {
+    "id": "Q36",
+    "question": "What is the final external escalation available to a customer with an unresolved Aurora complaint?"
+  },
+  {
+    "id": "Q37",
+    "question": "How can a customer submit a grievance through Aurora's online services?"
+  },
+  {
+    "id": "Q38",
+    "question": "What is the stated response time for Aurora's Grievance Redressal Officer?"
+  },
+  {
+    "id": "Q39",
+    "question": "What condition must be satisfied before escalating a complaint to the Insurance Ombudsman?"
+  },
+  {
+    "id": "Q40",
+    "question": "Where can a customer find the list of Insurance Ombudsman office jurisdictions?"
+  },
+
+  {
+    "id": "Q41",
+    "question": "If my complaint is not resolved at the first stage, how can I take it further?"
+  },
+  {
+    "id": "Q42",
+    "question": "What is the next step if Aurora's initial complaint resolution is unsatisfactory?"
+  },
+  {
+    "id": "Q43",
+    "question": "How do I escalate an unresolved complaint with Aurora?"
+  },
+  {
+    "id": "Q44",
+    "question": "Who should I contact when the first-level grievance process does not resolve my problem?"
+  },
+  {
+    "id": "Q45",
+    "question": "What can I do after Aurora fails to satisfactorily settle my complaint?"
+  },
+  {
+    "id": "Q46",
+    "question": "How many days does Aurora's grievance officer have to respond to an escalated complaint?"
+  },
+  {
+    "id": "Q47",
+    "question": "What is the response deadline for Aurora's officer handling escalated grievances?"
+  },
+  {
+    "id": "Q48",
+    "question": "After submitting a grievance, how soon should Aurora acknowledge it?"
+  },
+  {
+    "id": "Q49",
+    "question": "How long does Aurora normally have to resolve a complaint once it has been submitted?"
+  },
+  {
+    "id": "Q50",
+    "question": "What information should I include when making a complaint about an insurance claim?"
+  },
+  {
+    "id": "Q51",
+    "question": "Where can I obtain the contact information for the person responsible for escalated grievances?"
+  },
+  {
+    "id": "Q52",
+    "question": "What happens when Aurora does not provide an answer to my grievance within the required timeframe?"
+  },
+  {
+    "id": "Q53",
+    "question": "When is it appropriate to take an Aurora complaint to an external ombudsman?"
+  },
+  {
+    "id": "Q54",
+    "question": "Can I approach the Insurance Ombudsman if Aurora has not responded to my complaint?"
+  },
+  {
+    "id": "Q55",
+    "question": "What is the final escalation route available for an unresolved Aurora grievance?"
+  },
+  {
+    "id": "Q56",
+    "question": "How can I submit a complaint using Aurora's available grievance channels?"
+  },
+  {
+    "id": "Q57",
+    "question": "Where can I check the published information about Aurora's complaint handling performance?"
+  },
+  {
+    "id": "Q58",
+    "question": "How often does Aurora publish statistics about its complaints and their resolution?"
+  },
+  {
+    "id": "Q59",
+    "question": "Where can I find information about the different Insurance Ombudsman jurisdictions?"
+  },
+  {
+    "id": "Q60",
+    "question": "What are the stages a customer can follow when escalating an unresolved Aurora complaint?"
+  },
+  
+  {
+    "id": "Q61",
+    "question": "What should a policyholder do after receiving an unsatisfactory response to a grievance?"
+  },
+  {
+    "id": "Q62",
+    "question": "What is the process for moving a complaint from customer service to the next grievance level?"
+  },
+  {
+    "id": "Q63",
+    "question": "Who can handle a grievance when the customer's initial complaint remains unresolved?"
+  },
+  {
+    "id": "Q64",
+    "question": "What is the expected turnaround time once a grievance reaches the GRO?"
+  },
+  {
+    "id": "Q65",
+    "question": "How does a customer know where to contact Aurora's grievance officer?"
+  },
+  {
+    "id": "Q66",
+    "question": "What are the options for contacting Aurora to register a complaint?"
+  },
+  {
+    "id": "Q67",
+    "question": "How soon should Aurora acknowledge a grievance submitted by a customer?"
+  },
+  {
+    "id": "Q68",
+    "question": "What is Aurora's stated timeframe for resolving a customer grievance?"
+  },
+  {
+    "id": "Q69",
+    "question": "What can a customer do when Aurora has not provided a response after the required waiting period?"
+  },
+  {
+    "id": "Q70",
+    "question": "At what point can an unresolved Aurora complaint be taken outside the insurer's internal process?"
+  },
+  {
+    "id": "Q71",
+    "question": "What role does the Insurance Ombudsman play in an unresolved insurance complaint?"
+  },
+  {
+    "id": "Q72",
+    "question": "What circumstances allow a customer to seek help from the Insurance Ombudsman?"
+  },
+  {
+    "id": "Q73",
+    "question": "What information should be included when reporting a dispute concerning an insurance claim?"
+  },
+  {
+    "id": "Q74",
+    "question": "Where can customers submit an Aurora grievance electronically?"
+  },
+  {
+    "id": "Q75",
+    "question": "What information does Aurora publish about its complaint resolution performance?"
+  },
+  {
+    "id": "Q76",
+    "question": "How often are Aurora's grievance statistics made publicly available?"
+  },
+  {
+    "id": "Q77",
+    "question": "What does the annual report of the Insurance Ombudsman provide information about?"
+  },
+  {
+    "id": "Q78",
+    "question": "Which source should a customer consult to identify the relevant Insurance Ombudsman jurisdiction?"
+  },
+  {
+    "id": "Q79",
+    "question": "Can a customer escalate a complaint when Aurora's final response does not resolve the dispute?"
+  },
+  {
+    "id": "Q80",
+    "question": "What sequence should a customer follow when an Aurora grievance remains unresolved?"
+  },
+  {
+    "id": "Q81",
+    "question": "What are the different stages available for resolving a customer complaint?"
+  },
+  {
+    "id": "Q82",
+    "question": "What should happen when a customer is dissatisfied with the outcome of Stage 1?"
+  },
+  {
+    "id": "Q83",
+    "question": "Who is responsible for the second stage of Aurora's grievance process?"
+  },
+  {
+    "id": "Q84",
+    "question": "How does the grievance process proceed after the initial complaint is submitted?"
+  },
+  {
+    "id": "Q85",
+    "question": "What is the expected resolution period for complaints handled by Aurora customer service?"
+  },
+  {
+    "id": "Q86",
+    "question": "How long does a customer need to wait before escalating an unanswered complaint?"
+  },
+  {
+    "id": "Q87",
+    "question": "What happens when Aurora acknowledges a grievance but does not resolve it within the prescribed period?"
+  },
+  {
+    "id": "Q88",
+    "question": "Which authority handles a complaint after Aurora's internal grievance process has been exhausted?"
+  },
+  {
+    "id": "Q89",
+    "question": "What conditions must exist before an insurance complaint can be referred to the Ombudsman?"
+  },
+  {
+    "id": "Q90",
+    "question": "What external remedy is available when an insurer's final grievance response is unacceptable?"
+  },
+  {
+    "id": "Q91",
+    "question": "What are the ways in which a customer can initially contact Aurora about a grievance?"
+  },
+  {
+    "id": "Q92",
+    "question": "Can a grievance be submitted through Aurora's mobile application?"
+  },
+  {
+    "id": "Q93",
+    "question": "Can customers raise grievances through the Aurora online portal?"
+  },
+  {
+    "id": "Q94",
+    "question": "What telephone or online channels can be used to raise an Aurora complaint?"
+  },
+  {
+    "id": "Q95",
+    "question": "What information should accompany a complaint involving a claim dispute?"
+  },
+  {
+    "id": "Q96",
+    "question": "Why would a customer need to provide a policy number when raising a grievance?"
+  },
+  {
+    "id": "Q97",
+    "question": "Where is the GRO's contact information made available to policyholders?"
+  },
+  {
+    "id": "Q98",
+    "question": "What is the responsibility of the Grievance Redressal Officer after an escalation?"
+  },
+  {
+    "id": "Q99",
+    "question": "What response period applies once a grievance reaches the GRO?"
+  },
+  {
+    "id": "Q100",
+    "question": "What can a policyholder do if the GRO's response does not resolve the complaint?"
+  },
+  {
+    "id": "Q101",
+    "question": "How does the 30-day complaint period affect access to the Insurance Ombudsman?"
+  },
+  {
+    "id": "Q102",
+    "question": "What happens if Aurora does not respond to the original complaint within 30 days?"
+  },
+  {
+    "id": "Q103",
+    "question": "Does an unsatisfactory final response from Aurora allow further escalation?"
+  },
+  {
+    "id": "Q104",
+    "question": "What is the relationship between Aurora's final grievance response and Ombudsman escalation?"
+  },
+  {
+    "id": "Q105",
+    "question": "Which document explains the actual complaint escalation procedure?"
+  },
+  {
+    "id": "Q106",
+    "question": "What information is contained in the Insurance Ombudsman office reference list?"
+  },
+  {
+    "id": "Q107",
+    "question": "Where can a customer determine which Ombudsman jurisdiction applies to them?"
+  },
+  {
+    "id": "Q108",
+    "question": "What type of information is published in Aurora's quarterly grievance statistics?"
+  },
+  {
+    "id": "Q109",
+    "question": "What performance information about complaint handling is published periodically?"
+  },
+  {
+    "id": "Q110",
+    "question": "How are Aurora's complaint disposal rates reported?"
+  },
+  {
+    "id": "Q111",
+    "question": "What does the Ombudsman's annual report publish regarding insurers?"
+  },
+  {
+    "id": "Q112",
+    "question": "Where can information about awards against insurers be found?"
+  },
+  {
+    "id": "Q113",
+    "question": "A customer has received no response after submitting a grievance. What escalation option is available?"
+  },
+  {
+    "id": "Q114",
+    "question": "A complaint remains unresolved after Aurora's final response. What should the customer consider doing next?"
+  },
+  {
+    "id": "Q115",
+    "question": "A policyholder wants to challenge a claim decision. What information should they provide with the grievance?"
+  },
+  {
+    "id": "Q116",
+    "question": "A customer has already contacted Aurora but remains dissatisfied. What is the next internal escalation stage?"
+  },
+  {
+    "id": "Q117",
+    "question": "A customer wants to identify the correct Ombudsman office. Which reference should they consult?"
+  },
+  {
+    "id": "Q118",
+    "question": "A customer wants to know how Aurora performs in handling complaints. Where is this information published?"
+  },
+  {
+    "id": "Q119",
+    "question": "A grievance has reached the second stage. What response timeframe should the customer expect?"
+  },
+  {
+    "id": "Q120",
+    "question": "A customer has completed Aurora's internal complaint process without satisfactory resolution. What formal escalation route remains?"
+  }
+]
+

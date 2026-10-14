@@ -1,0 +1,5 @@
+﻿{
+  "question": "What is the procedure for escalating a complaint when the first resolution does not solve the customer's issue?",
+  "top_k": 5,
+  "mode": "rag"
+}

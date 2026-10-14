@@ -1,0 +1,5 @@
+{
+  "question": "How many days does a customer have to submit a reimbursement claim?",
+  "top_k": 5,
+  "mode": "rag"
+}

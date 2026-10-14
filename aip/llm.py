@@ -20,7 +20,7 @@ import json
 import random
 import re
 import time
-from collections.abc import Sequence
+from collections.abc import Iterator, Sequence
 from typing import Any, TypeVar
 
 from pydantic import BaseModel, ValidationError
@@ -228,6 +228,292 @@ def chat(
 
 _JSON_BLOCK = re.compile(r"```(?:json)?\s*(.*?)```", re.DOTALL)
 
+def chat_stream(
+    prompt_or_messages: str | Messages,
+    *,
+    system: str | None = None,
+    tier: str = "MAIN",
+    model: str | None = None,
+    temperature: float | None = None,
+    max_tokens: int = 1024,
+    tools: list[dict] | None = None,
+    tool_choice: Any | None = None,
+    **extra: Any,
+) -> Iterator[str]:
+    """Stream free-text completion chunks.
+
+    This is intentionally separate from chat()/raw_call().
+    Existing non-streaming behavior remains unchanged.
+
+    The complete response is cached after the stream finishes, and the
+    completed model call is recorded exactly once in the cost ledger.
+    """
+
+    m = resolve_model(model or tier)
+    messages = _normalise(prompt_or_messages, system)
+
+    # Build the same logical cache request as chat(), but do NOT include
+    # stream=True in the cache key. A streamed and non-streamed request for
+    # the same logical prompt should share the same cached answer.
+    request = {
+        "model": m,
+        "messages": messages,
+        "temperature": (
+            settings.temperature
+            if temperature is None
+            else temperature
+        ),
+        "max_tokens": max_tokens,
+        "tools": tools,
+        "tool_choice": tool_choice,
+        **(extra or {}),
+    }
+
+    key = cache.make_key("chat", request)
+
+    # ---------------------------------------------------------
+    # Existing LLM cache
+    # ---------------------------------------------------------
+    hit = cache.get(key)
+
+    if hit is not None:
+        usage = cost.Usage(
+            model=m,
+            prompt_tokens=hit["usage"]["prompt_tokens"],
+            completion_tokens=hit["usage"]["completion_tokens"],
+            cost_usd=0.0,
+            latency_ms=0.0,
+            cached=True,
+            calls=1,
+            priced=True,
+        )
+
+        cost.record(usage)
+        tracing.event(
+            "llm.call",
+            model=m,
+            cached=True,
+            cost_usd=0.0,
+            streaming=True,
+        )
+
+        hit["usage"]["cached"] = True
+
+        text = hit.get("text", "")
+        if text:
+            yield text
+
+        return
+
+    # ---------------------------------------------------------
+    # Offline mode
+    # ---------------------------------------------------------
+    if settings.offline:
+        raise cache.CacheMiss(
+            "AIP_OFFLINE=1 and this request is not in the cache.\n"
+            f"model={m}\n"
+            f"first 200 chars of last message: "
+            f"{str(messages[-1].get('content'))[:200]!r}\n"
+            "Either run once online to populate the cache, "
+            "or unset AIP_OFFLINE."
+        )
+
+    # LiteLLM is imported lazily, exactly like raw_call().
+    from litellm import completion
+
+    kwargs: dict[str, Any] = {
+        "model": m,
+        "messages": messages,
+        "temperature": (
+            settings.temperature
+            if temperature is None
+            else temperature
+        ),
+        "max_tokens": max_tokens,
+        "timeout": settings.timeout_s,
+        "stream": True,
+    }
+
+    if tools:
+        kwargs["tools"] = tools
+
+        if tool_choice is not None:
+            kwargs["tool_choice"] = tool_choice
+
+    # Ask LiteLLM/provider for usage in the final stream chunk where
+    # supported. This allows the normal cost ledger to remain accurate.
+    stream_options = dict(
+        extra.pop("stream_options", {}) or {}
+    )
+    stream_options.setdefault("include_usage", True)
+    kwargs["stream_options"] = stream_options
+
+    kwargs.update(extra or {})
+
+    last_exc: Exception | None = None
+
+    with tracing.trace(
+        "llm.stream",
+        model=m,
+        cached=False,
+    ) as span:
+
+        t0 = time.perf_counter()
+
+        for attempt in range(settings.max_retries):
+
+            try:
+                response_stream = completion(**kwargs)
+                break
+
+            except Exception as exc:  # noqa: BLE001
+                last_exc = exc
+
+                if (
+                    not _is_retryable(exc)
+                    or attempt == settings.max_retries - 1
+                ):
+                    span["error_kind"] = type(exc).__name__
+                    raise
+
+                sleep_s = min(30.0, 2 ** attempt) * random.random()
+
+                tracing.event(
+                    "llm.retry",
+                    attempt=attempt + 1,
+                    sleep_s=round(sleep_s, 2),
+                    error=type(exc).__name__,
+                )
+
+                time.sleep(sleep_s)
+
+        else:  # pragma: no cover
+            raise last_exc  # type: ignore[misc]
+
+        parts: list[str] = []
+
+        prompt_tokens = 0
+        completion_tokens = 0
+        finish_reason = None
+
+        first_chunk_seen = False
+
+        for chunk in response_stream:
+
+            # -------------------------------------------------
+            # Text delta
+            # -------------------------------------------------
+            try:
+                choice = chunk.choices[0]
+            except (AttributeError, IndexError):
+                choice = None
+
+            if choice is not None:
+
+                delta = getattr(choice, "delta", None)
+
+                text = (
+                    getattr(delta, "content", None)
+                    if delta is not None
+                    else None
+                )
+
+                if text:
+                    text = str(text)
+                    parts.append(text)
+
+                    if not first_chunk_seen:
+                        first_chunk_seen = True
+
+                    yield text
+
+                finish_reason = (
+                    getattr(choice, "finish_reason", None)
+                    or finish_reason
+                )
+
+            # -------------------------------------------------
+            # Usage
+            # -------------------------------------------------
+            usage = getattr(chunk, "usage", None)
+
+            if usage is not None:
+                prompt_tokens = int(
+                    getattr(
+                        usage,
+                        "prompt_tokens",
+                        prompt_tokens,
+                    )
+                    or prompt_tokens
+                )
+
+                completion_tokens = int(
+                    getattr(
+                        usage,
+                        "completion_tokens",
+                        completion_tokens,
+                    )
+                    or completion_tokens
+                )
+
+        latency_ms = (
+            time.perf_counter() - t0
+        ) * 1000
+
+        text = "".join(parts)
+
+        usd = cost.price_of(
+            m,
+            prompt_tokens,
+            completion_tokens,
+        )
+
+        priced = cost.is_priced(m)
+
+        span.update(
+            prompt_tokens=prompt_tokens,
+            completion_tokens=completion_tokens,
+            cost_usd=round(usd, 6),
+            latency_ms=round(latency_ms, 1),
+            finish_reason=finish_reason,
+            streaming=True,
+        )
+
+        cost.record(
+            cost.Usage(
+                model=m,
+                prompt_tokens=prompt_tokens,
+                completion_tokens=completion_tokens,
+                cost_usd=usd,
+                latency_ms=latency_ms,
+                cached=False,
+                calls=1,
+                priced=priced,
+            )
+        )
+
+    # ---------------------------------------------------------
+    # Cache the COMPLETE answer.
+    # ---------------------------------------------------------
+    result = {
+        "text": text,
+        "tool_calls": [],
+        "usage": {
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens,
+            "cost_usd": usd,
+            "latency_ms": latency_ms,
+            "cached": False,
+        },
+        "finish_reason": finish_reason,
+    }
+
+    cache.put(
+        key,
+        "chat",
+        request,
+        result,
+    )
 
 def extract_json(text: str) -> Any:
     """Best-effort JSON recovery from a model response.

@@ -6,6 +6,7 @@ after Part A, not before. Labs 5-7 build on whichever of the two you prefer,
 but you must be able to explain every line of the one you use.
 """
 from __future__ import annotations
+import time
 
 import re
 import sys
@@ -94,6 +95,7 @@ class Answer:
     invalid_citations: list[int] = field(default_factory=list)
     n_citations: int = 0
     truncated: bool = False
+    latency_breakdown: dict = field(default_factory=dict)
 
 
 def validate_answer(
@@ -134,24 +136,42 @@ def answer_question(
     question: str,
     retriever: Retriever,
     *,
-    k: int = 30,
-    final_k: int = 10,
+    k: int = 10,
+    final_k: int = 4,
     reranker=None,
     tier: str = "MAIN",
 ) -> Answer:
     """Retrieve, generate, validate, and repair/refuse if necessary."""
 
+    total_start = time.perf_counter()
+
+    # ---------------------------------------------------------
     # 1. Retrieve a wider candidate set.
+    # ---------------------------------------------------------
+    retrieval_start = time.perf_counter()
+
     hits = retriever.search(question, k=k)
 
+    retrieval_ms = (time.perf_counter() - retrieval_start) * 1000
+
+    # ---------------------------------------------------------
     # 2. Optional reranking.
+    # ---------------------------------------------------------
+    reranking_start = time.perf_counter()
+
     if reranker is not None:
         hits = reranker.rerank(question, hits)
 
+    reranking_ms = (time.perf_counter() - reranking_start) * 1000
+
+    # ---------------------------------------------------------
     # 3. Keep only the final number of sources.
+    # ---------------------------------------------------------
     hits = hits[:final_k]
 
+    # ---------------------------------------------------------
     # 4. Number the retrieved sources so the model can cite them.
+    # ---------------------------------------------------------
     context = format_context(hits)
 
     prompt = f"""\
@@ -164,17 +184,25 @@ Sources:
 Answer the question using only the supplied sources.
 """
 
+    # ---------------------------------------------------------
     # 5. Generate the answer.
+    # ---------------------------------------------------------
+    generation_start = time.perf_counter()
+
     response = chat(
         prompt,
         system=ANSWER_SYSTEM,
         tier=tier,
         temperature=0,
-        max_tokens=1024,
+        max_tokens=750,
         return_full=True,
     )
 
+    generation_ms = (time.perf_counter() - generation_start) * 1000
+
+    # ---------------------------------------------------------
     # 6. Extract text and finish reason.
+    # ---------------------------------------------------------
     if isinstance(response, dict):
         text = response.get("text", "")
         finish_reason = response.get("finish_reason")
@@ -182,14 +210,35 @@ Answer the question using only the supplied sources.
         text = str(response)
         finish_reason = None
 
+    # ---------------------------------------------------------
     # 7. Validate the generated answer.
+    # ---------------------------------------------------------
+    validation_start = time.perf_counter()
+
     validation = validate_answer(
         text,
         len(hits),
         finish_reason,
     )
 
+    validation_ms = (time.perf_counter() - validation_start) * 1000
+
+    # ---------------------------------------------------------
+    # Create timing information.
+    # ---------------------------------------------------------
+    latency_breakdown = {
+        "retrieval_ms": retrieval_ms,
+        "reranking_ms": reranking_ms,
+        "generation_ms": generation_ms,
+        "validation_ms": validation_ms,
+        "repair_generation_ms": 0.0,
+    }
+
     if validation["citations_valid"]:
+        latency_breakdown["total_ms"] = (
+            (time.perf_counter() - total_start) * 1000
+        )
+
         return Answer(
             question=question,
             text=text,
@@ -199,9 +248,12 @@ Answer the question using only the supplied sources.
             invalid_citations=validation["invalid_citations"],
             n_citations=validation["n_citations"],
             truncated=validation["truncated"],
+            latency_breakdown=latency_breakdown,
         )
 
+    # ---------------------------------------------------------
     # 8. Repair once if validation failed.
+    # ---------------------------------------------------------
     repair_prompt = f"""\
 The previous answer failed citation validation.
 
@@ -226,13 +278,19 @@ respond exactly:
 Do not invent information.
 """
 
+    repair_start = time.perf_counter()
+
     repaired = chat(
         repair_prompt,
         system=ANSWER_SYSTEM,
         tier=tier,
         temperature=0,
-        max_tokens=1024,
+        max_tokens=750,
         return_full=True,
+    )
+
+    repair_generation_ms = (
+        (time.perf_counter() - repair_start) * 1000
     )
 
     if isinstance(repaired, dict):
@@ -242,13 +300,31 @@ Do not invent information.
         repaired_text = str(repaired)
         repaired_finish = None
 
+    # ---------------------------------------------------------
+    # Validate repaired answer.
+    # ---------------------------------------------------------
+    repair_validation_start = time.perf_counter()
+
     repaired_validation = validate_answer(
         repaired_text,
         len(hits),
         repaired_finish,
     )
 
+    repair_validation_ms = (
+        (time.perf_counter() - repair_validation_start) * 1000
+    )
+
+    latency_breakdown["repair_generation_ms"] = repair_generation_ms
+
+    # Include repair validation in total validation time.
+    latency_breakdown["validation_ms"] += repair_validation_ms
+
     if repaired_validation["citations_valid"]:
+        latency_breakdown["total_ms"] = (
+            (time.perf_counter() - total_start) * 1000
+        )
+
         return Answer(
             question=question,
             text=repaired_text,
@@ -258,9 +334,16 @@ Do not invent information.
             invalid_citations=repaired_validation["invalid_citations"],
             n_citations=repaired_validation["n_citations"],
             truncated=repaired_validation["truncated"],
+            latency_breakdown=latency_breakdown,
         )
 
+    # ---------------------------------------------------------
     # 9. Never return an invalid non-refusal answer.
+    # ---------------------------------------------------------
+    latency_breakdown["total_ms"] = (
+        (time.perf_counter() - total_start) * 1000
+    )
+
     return Answer(
         question=question,
         text=REFUSAL,
@@ -270,6 +353,7 @@ Do not invent information.
         invalid_citations=[],
         n_citations=0,
         truncated=False,
+        latency_breakdown=latency_breakdown,
     )
 
 
@@ -302,7 +386,7 @@ Answer the question using only the supplied sources.
         system=ANSWER_SYSTEM,
         tier=tier,
         temperature=0,
-        max_tokens=1024,
+        max_tokens=750,
         return_full=True,
     )
 

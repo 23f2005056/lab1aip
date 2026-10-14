@@ -1,0 +1,204 @@
+{
+  "summary": {
+    "total_questions": 20,
+    "successful_ttft_measurements": 20,
+    "errors": 0,
+    "ttft_target_ms": 1500.0,
+    "ttft_mean_ms": 8.489715000087017,
+    "ttft_p50_ms": 6.202400000347552,
+    "ttft_p95_ms": 20.778295000036458,
+    "ttft_p99_ms": 29.392059000001595,
+    "ttft_min_ms": 4.938699999911478,
+    "ttft_max_ms": 31.5454999999929,
+    "ttft_std_ms": 6.447036930915981,
+    "ttft_pass_count": 20,
+    "ttft_fail_count": 0,
+    "ttft_pass_rate": 1.0,
+    "total_latency_mean_ms": 9.715360000109285,
+    "total_latency_p50_ms": 7.604500000070402,
+    "total_latency_p95_ms": 22.106645000258148,
+    "overall_ttft_target_pass": true
+  },
+  "results": [
+    {
+      "index": 1,
+      "question": "What is the reimbursement claim deadline?",
+      "status_code": 200,
+      "ttft_ms": 12.092100000700157,
+      "total_ms": 12.98410000072181,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 2,
+      "question": "When must a reimbursement claim be submitted after discharge?",
+      "status_code": 200,
+      "ttft_ms": 5.274500000268745,
+      "total_ms": 6.4107999996849685,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 3,
+      "question": "What documents are required for an emergency reimbursement claim?",
+      "status_code": 200,
+      "ttft_ms": 6.3783999994484475,
+      "total_ms": 8.949999999458669,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 4,
+      "question": "What is the process for submitting a reimbursement claim?",
+      "status_code": 200,
+      "ttft_ms": 5.233099999713886,
+      "total_ms": 6.0749999993277015,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 5,
+      "question": "How long does it take to process a reimbursement claim?",
+      "status_code": 200,
+      "ttft_ms": 6.753899999239366,
+      "total_ms": 7.575199999337201,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 6,
+      "question": "What happens when a reimbursement claim is incomplete?",
+      "status_code": 200,
+      "ttft_ms": 31.5454999999929,
+      "total_ms": 33.15980000024865,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 7,
+      "question": "What is the policy cancellation process?",
+      "status_code": 200,
+      "ttft_ms": 5.166700000700075,
+      "total_ms": 6.096700000853161,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 8,
+      "question": "How can I cancel my policy?",
+      "status_code": 200,
+      "ttft_ms": 6.183700000292447,
+      "total_ms": 7.382700000562181,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 9,
+      "question": "What is the deadline for submitting pre-hospitalisation bills?",
+      "status_code": 200,
+      "ttft_ms": 6.8400000000110595,
+      "total_ms": 7.857800000238058,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 10,
+      "question": "When should post-hospitalisation bills be submitted?",
+      "status_code": 200,
+      "ttft_ms": 6.6130000004704925,
+      "total_ms": 7.633800000803603,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 11,
+      "question": "What expenses are covered during pre-hospitalisation?",
+      "status_code": 200,
+      "ttft_ms": 5.857699999978649,
+      "total_ms": 6.693299999824376,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 12,
+      "question": "What expenses are covered after hospitalisation?",
+      "status_code": 200,
+      "ttft_ms": 5.971900000076857,
+      "total_ms": 6.955599999855622,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 13,
+      "question": "What should I do if my reimbursement claim is rejected?",
+      "status_code": 200,
+      "ttft_ms": 9.842999999818858,
+      "total_ms": 11.09340000039083,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 14,
+      "question": "Can I submit additional documents after filing a reimbursement claim?",
+      "status_code": 200,
+      "ttft_ms": 5.171900000277674,
+      "total_ms": 6.196100000124716,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 15,
+      "question": "What are the requirements for a cashless claim?",
+      "status_code": 200,
+      "ttft_ms": 6.165400000099908,
+      "total_ms": 7.145200000195473,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 16,
+      "question": "How does the cashless hospitalisation process work?",
+      "status_code": 200,
+      "ttft_ms": 20.211600000038743,
+      "total_ms": 21.52490000025864,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 17,
+      "question": "What happens if the hospital is not part of the network?",
+      "status_code": 200,
+      "ttft_ms": 7.313500000236672,
+      "total_ms": 8.341499999914959,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 18,
+      "question": "What documents are needed when filing a claim?",
+      "status_code": 200,
+      "ttft_ms": 6.221100000402657,
+      "total_ms": 7.729200000540004,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 19,
+      "question": "Explain the reimbursement claim process from hospital discharge to payment.",
+      "status_code": 200,
+      "ttft_ms": 6.018600000061269,
+      "total_ms": 8.349099999577447,
+      "cached": null,
+      "error": null
+    },
+    {
+      "index": 20,
+      "question": "What are the important deadlines I should know when submitting a health insurance claim?",
+      "status_code": 200,
+      "ttft_ms": 4.938699999911478,
+      "total_ms": 6.153000000267639,
+      "cached": null,
+      "error": null
+    }
+  ]
+}

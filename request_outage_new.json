@@ -1,0 +1,5 @@
+{
+  "question": "For a completely new hypothetical policy scenario, determine the provider response time for a service that is not present in the cache.",
+  "top_k": 5,
+  "mode": "rag"
+}

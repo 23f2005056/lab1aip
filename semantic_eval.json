@@ -1,0 +1,6 @@
+﻿{
+  "question": "How much time is allowed to submit a reimbursement claim after discharge?",
+  "top_k": 5,
+  "mode": "rag",
+  "threshold": 0.85
+}

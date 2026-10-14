@@ -1,0 +1,5 @@
+{
+  "question": "Explain the Aurora policy for emergency hospital admission and identify the applicable notification requirement.",
+  "top_k": 5,
+  "mode": "rag"
+}

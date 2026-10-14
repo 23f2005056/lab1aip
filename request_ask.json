@@ -1,0 +1,5 @@
+{
+  "question": "What are the different stages available for resolving a customer complaint?",
+  "top_k": 5,
+  "mode": "rag"
+}

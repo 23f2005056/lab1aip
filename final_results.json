@@ -1,0 +1,362 @@
+[
+  {
+    "id": "Q81",
+    "elapsed_ms": 10281.18,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 8945.65,
+    "cost_usd": 0.00276855,
+    "latency_ms": 10223.36
+  },
+  {
+    "id": "Q82",
+    "elapsed_ms": 3822.26,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3655.46,
+    "cost_usd": 0.00170625,
+    "latency_ms": 3792.64
+  },
+  {
+    "id": "Q83",
+    "elapsed_ms": 4296.07,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4231.0,
+    "cost_usd": 0.001335,
+    "latency_ms": 4274.26
+  },
+  {
+    "id": "Q84",
+    "elapsed_ms": 4105.6,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3808.85,
+    "cost_usd": 0.00319425,
+    "latency_ms": 4083.41
+  },
+  {
+    "id": "Q85",
+    "elapsed_ms": 3112.93,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3024.56,
+    "cost_usd": 0.00141825,
+    "latency_ms": 3091.68
+  },
+  {
+    "id": "Q86",
+    "elapsed_ms": 4051.69,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3956.54,
+    "cost_usd": 0.0025125,
+    "latency_ms": 4028.84
+  },
+  {
+    "id": "Q87",
+    "elapsed_ms": 4709.32,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4513.44,
+    "cost_usd": 0.003105,
+    "latency_ms": 4688.59
+  },
+  {
+    "id": "Q88",
+    "elapsed_ms": 960.92,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 931.92,
+    "cost_usd": 0.0,
+    "latency_ms": 934.17
+  },
+  {
+    "id": "Q89",
+    "elapsed_ms": 4185.1,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3977.14,
+    "cost_usd": 0.00288825,
+    "latency_ms": 4161.03
+  },
+  {
+    "id": "Q90",
+    "elapsed_ms": 4787.83,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4604.62,
+    "cost_usd": 0.0027555,
+    "latency_ms": 4764.32
+  },
+  {
+    "id": "Q91",
+    "elapsed_ms": 3056.49,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 2927.39,
+    "cost_usd": 0.002007,
+    "latency_ms": 3031.83
+  },
+  {
+    "id": "Q92",
+    "elapsed_ms": 924.18,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 893.67,
+    "cost_usd": 0.0,
+    "latency_ms": 898.04
+  },
+  {
+    "id": "Q93",
+    "elapsed_ms": 1190.55,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 1143.74,
+    "cost_usd": 0.0,
+    "latency_ms": 1145.08
+  },
+  {
+    "id": "Q94",
+    "elapsed_ms": 924.87,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 897.48,
+    "cost_usd": 0.0,
+    "latency_ms": 898.59
+  },
+  {
+    "id": "Q95",
+    "elapsed_ms": 3647.25,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3574.96,
+    "cost_usd": 0.0026055,
+    "latency_ms": 3622.61
+  },
+  {
+    "id": "Q96",
+    "elapsed_ms": 3513.75,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3445.88,
+    "cost_usd": 0.0021975,
+    "latency_ms": 3482.43
+  },
+  {
+    "id": "Q97",
+    "elapsed_ms": 4056.86,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3931.09,
+    "cost_usd": 0.0022755,
+    "latency_ms": 4022.4
+  },
+  {
+    "id": "Q98",
+    "elapsed_ms": 3429.57,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3289.2,
+    "cost_usd": 0.0020535,
+    "latency_ms": 3398.89
+  },
+  {
+    "id": "Q99",
+    "elapsed_ms": 3697.81,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3587.09,
+    "cost_usd": 0.00189675,
+    "latency_ms": 3659.67
+  },
+  {
+    "id": "Q100",
+    "elapsed_ms": 4892.53,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4632.49,
+    "cost_usd": 0.00342675,
+    "latency_ms": 4838.97
+  },
+  {
+    "id": "Q101",
+    "elapsed_ms": 4292.71,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4183.42,
+    "cost_usd": 0.00119475,
+    "latency_ms": 4267.56
+  },
+  {
+    "id": "Q102",
+    "elapsed_ms": 973.97,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 949.93,
+    "cost_usd": 0.0,
+    "latency_ms": 951.15
+  },
+  {
+    "id": "Q103",
+    "elapsed_ms": 3265.68,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3153.57,
+    "cost_usd": 0.001449,
+    "latency_ms": 3243.46
+  },
+  {
+    "id": "Q104",
+    "elapsed_ms": 975.36,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 950.58,
+    "cost_usd": 0.0,
+    "latency_ms": 951.71
+  },
+  {
+    "id": "Q105",
+    "elapsed_ms": 3544.85,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3323.94,
+    "cost_usd": 0.00150975,
+    "latency_ms": 3523.84
+  },
+  {
+    "id": "Q106",
+    "elapsed_ms": 4905.24,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4695.53,
+    "cost_usd": 0.0024495,
+    "latency_ms": 4884.08
+  },
+  {
+    "id": "Q107",
+    "elapsed_ms": 3543.2,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3393.27,
+    "cost_usd": 0.0018,
+    "latency_ms": 3521.95
+  },
+  {
+    "id": "Q108",
+    "elapsed_ms": 4235.82,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4173.89,
+    "cost_usd": 0.00189075,
+    "latency_ms": 4211.98
+  },
+  {
+    "id": "Q109",
+    "elapsed_ms": 3726.06,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3638.3,
+    "cost_usd": 0.002196,
+    "latency_ms": 3700.26
+  },
+  {
+    "id": "Q110",
+    "elapsed_ms": 3694.18,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3516.51,
+    "cost_usd": 0.001602,
+    "latency_ms": 3671.08
+  },
+  {
+    "id": "Q111",
+    "elapsed_ms": 4077.37,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4034.44,
+    "cost_usd": 0.0010215,
+    "latency_ms": 4054.74
+  },
+  {
+    "id": "Q112",
+    "elapsed_ms": 4304.68,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4053.64,
+    "cost_usd": 0.00166875,
+    "latency_ms": 4282.33
+  },
+  {
+    "id": "Q113",
+    "elapsed_ms": 3791.3,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3589.06,
+    "cost_usd": 0.0017655,
+    "latency_ms": 3770.14
+  },
+  {
+    "id": "Q114",
+    "elapsed_ms": 925.3,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 900.96,
+    "cost_usd": 0.0,
+    "latency_ms": 902.16
+  },
+  {
+    "id": "Q115",
+    "elapsed_ms": 4809.46,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 4598.29,
+    "cost_usd": 0.003276,
+    "latency_ms": 4789.3
+  },
+  {
+    "id": "Q116",
+    "elapsed_ms": 991.52,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 966.81,
+    "cost_usd": 0.0,
+    "latency_ms": 967.91
+  },
+  {
+    "id": "Q117",
+    "elapsed_ms": 920.02,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 895.19,
+    "cost_usd": 0.0,
+    "latency_ms": 896.3
+  },
+  {
+    "id": "Q118",
+    "elapsed_ms": 3411.62,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3323.37,
+    "cost_usd": 0.002067,
+    "latency_ms": 3388.72
+  },
+  {
+    "id": "Q119",
+    "elapsed_ms": 3515.28,
+    "cached": false,
+    "cache_type": null,
+    "ttft_ms": 3462.73,
+    "cost_usd": 0.001374,
+    "latency_ms": 3492.06
+  },
+  {
+    "id": "Q120",
+    "elapsed_ms": 914.74,
+    "cached": true,
+    "cache_type": "semantic",
+    "ttft_ms": 890.56,
+    "cost_usd": 0.0,
+    "latency_ms": 891.66
+  }
+]

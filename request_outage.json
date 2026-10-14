@@ -1,0 +1,5 @@
+{
+  "question": "TEST MODEL OUTAGE 20261004: What is the exact procedure for a completely fictional Aurora test request?",
+  "top_k": 5,
+  "mode": "rag"
+}
